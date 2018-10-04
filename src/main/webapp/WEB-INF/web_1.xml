@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    
+    <servlet>
+        <servlet-name>addToCart</servlet-name>
+        <servlet-class>controller.addToCart</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SignInServlet</servlet-name>
+        <servlet-class>loginRegister.SignInServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SignUpServlet</servlet-name>
+        <servlet-class>loginRegister.SignUpServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>changeMyPassword</servlet-name>
+        <servlet-class>loginRegister.changeMyPassword</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>removeCartProduct</servlet-name>
+        <servlet-class>product.removeCartProduct</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>getCompanyNames</servlet-name>
+        <servlet-class>product.addProductPack.getCompanyNames</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addToCart</servlet-name>
+        <url-pattern>/addToCart</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SignInServlet</servlet-name>
+        <url-pattern>/SignInServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SignUpServlet</servlet-name>
+        <url-pattern>/SignUpServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>changeMyPassword</servlet-name>
+        <url-pattern>/changeMyPassword</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>removeCartProduct</servlet-name>
+        <url-pattern>/removeCartProduct</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>getCompanyNames</servlet-name>
+        <url-pattern>/getCompanyNames</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
